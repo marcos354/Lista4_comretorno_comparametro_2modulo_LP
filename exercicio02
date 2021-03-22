@@ -1,0 +1,9 @@
+def som(a1,a2):
+  s = a1 + a2
+  return s
+def main():
+  n1 = int(input("Digite o número 1: "))
+  n2 = int(input("Digite o número 2: "))
+  soma = som(n1,n2)
+  print("A soma do",n1, "+", n2, "é igual: ", soma)
+main()
