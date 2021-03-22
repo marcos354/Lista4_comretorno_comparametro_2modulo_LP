@@ -1,0 +1,9 @@
+def aumento(porcento,salario):
+  reajuste = salario + (porcento / 100 * 100)
+  return reajuste
+def main():
+  porcentagem = float(input("Digite quantos porcento será reajustado: "))
+  salario = float(input("Digite o valor do salário: "))
+  r = salario + (porcentagem / 100 * 100)
+  print("O salário do funcionário com aumento de ",porcentagem,"% é igual a: ",r)
+main()
