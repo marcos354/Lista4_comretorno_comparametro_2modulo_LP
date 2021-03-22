@@ -1,0 +1,8 @@
+def multiplicar(n):
+  r = n * 2
+  return r
+def main():
+  numero = int(input("Digite um número: "))
+  m = multiplicar(numero)
+  print('O número',numero,'* por 2 é = ',m)
+main()
