@@ -1,0 +1,37 @@
+def calc():
+  opcao = int(input("Menu de cálculos \n 1. Número ao quadrado \n 2. Número ao cubo \n 3. Raiz do número \n 4. Raiz cúbica do numero \n Qual opção desejada? "))
+  return opcao
+
+def quadrado(n):
+  aoQuadrado = n ** 2
+  return aoQuadrado
+
+def cubo (n):
+  aoCubo = n ** 3
+  return aoCubo
+
+def raiz (n):
+  raizQ = n ** (1/2)
+  return raizQ
+
+def raizCubo (n):
+  raizC = n ** (1/3)  
+  return raizC
+
+def main():
+    op = 1
+    while op >= 1 and op <= 4:
+        op = calc()
+        num = int(input('Informe um valor '))
+        if op == 1:
+            print('O quadrado do número ',num, 'é igual ',quadrado(num))      
+        elif op == 2:
+            print('O Cubo do número ', num, 'é igual ',cubo(num))
+        elif op == 3:
+            print('A raiz do número ',num, 'é igual',raiz(num))
+        elif op == 4:
+            print('A raiz ao cubo do número ',num, 'é igual',raizCubo(num))
+        else:
+            print("Usuário decidiu sair!!!!!!")
+main()
+
