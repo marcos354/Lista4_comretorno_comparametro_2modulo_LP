@@ -1,0 +1,18 @@
+# Digite aqui seu código
+def aumento(porcent,salario):
+  reajuste = salario + (salario * porcent / 100)
+  return reajuste
+
+def main():
+  soma_novo = 0
+  soma_antigo = 0
+  for cont_funcionarios in range(3):
+    sal = float(input("Digite o salário: ")) 
+    soma_antigo = soma_antigo + sal
+    porcentagem = float(input("Digite quantos porcento será reajustado: "))
+    novo = aumento(porcentagem,sal)
+    soma_novo = soma_novo + novo
+  diferenca = soma_novo - soma_antigo
+  print("O salário dos funcionários com aumento  é igual a: ",soma_novo)
+  print("A diferença entre o que será pago em relação ao que se pagava é igual: ", diferenca)
+main()
