@@ -1,0 +1,43 @@
+def soma (n1, n2):
+  soma = n1 + n2
+  return soma
+
+def subtracao (n1, n2):
+  subtracao = n1 - n2
+  return subtracao
+
+def multiplicacao (n1, n2):
+  multiplicacao = n1 * n2
+  return multiplicacao
+
+def divisao (n1, n2):
+  divisao = n1 / n2
+  return divisao
+
+def main():
+  print("Minha calculadora\n+ Somar dois números\n- Subtrair dois números\n* Multiplicar dois números\n/ Dividir dois números\n Digite qualquer outro número para sair:")
+  opcao = input('Informe uma opção para o cálculo: ')
+  while opcao == '+' or opcao == '-' or opcao == '*' or opcao == '/':
+    if opcao == '+':
+      n1 = float(input('Informe o primeiro número: '))
+      n2 = float(input('Informe o segundo número: '))
+      resultado = soma (n1, n2)
+      print("A soma do número",n1, "e o número",n2, "corresponde a: ", resultado)
+    if opcao == '-':
+      n1 = float(input('Informe o primeiro número: '))
+      n2 = float(input('Informe o segundo número: '))
+      resultado = subtracao (n1, n2)
+      print("A subtração do número",n1, "e o número",n2, " corresponde a: ", resultado)
+    if opcao == '*':
+      n1 = float(input('Informe o primeiro número: '))
+      n2 = float(input('Informe o segundo número: '))
+      resultado = multiplicacao (n1, n2)
+      print("A multiplicação do número",n1, "e o número",n2, " corresponde a: ", resultado)
+    if opcao == '/':
+      n1 = float(input('Informe o primeiro número: '))
+      n2 = float(input('Informe o segundo número: '))
+      resultado = divisao (n1, n2)
+      print("A divisão do número",n1, "e o número",n2, "corresponde a: ", resultado)
+    opcao = input('Informe uma opção para o cálculo ou Digite um caracter diferente do menu para sair: ')
+
+main()
