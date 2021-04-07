@@ -1,0 +1,43 @@
+def calc():
+  print("***Minha Calculadora***")
+  print("+ Soma dois números")
+  print("- Subtrai dois números")
+  print("* Multiplicar dois números")
+  print("/ Divide dois números")
+  opcao = str(input("Qual opção deseja? "))
+  return opcao
+
+def somar(num1,num2):
+  soma = num1 + num2
+  print("A soma do número ",num1, "e o número ",num2, "é = ",soma)
+
+def subtrair(num1,num2):
+  subtrai = num1 - num2
+  print("A subtração do número ",num1, 'e o número ',num2, 'é = ', subtrai)
+
+def multiplicar(num1,num2):
+  multiplica = num1 * num2
+  print("A multiplicação do número ",num1, "e o número ", num2, "é = ", multiplica)
+
+def dividir(num1,num2):
+  dividi = num1 / num2
+  print("A divisão do número ", num1, "e o número ", num2, "é = ", dividi)
+
+def main():
+  opcao = calc()
+  while opcao == "+" or opcao == "-" or opcao == "*" or opcao == "/":    
+    num1 = float(input("Digite o primeiro número: "))
+    num2 = float(input("Digite o segundo número: "))
+    if opcao == "+":
+      somar(num1,num2)
+    elif opcao == "-":
+      subtrair(num1,num2)
+    elif opcao == "*":
+      multiplicar(num1,num2)
+    elif opcao == "/":
+      dividir(num1,num2)
+    else:
+      print("O usuário decidiu sair!!!!")
+    opcao = str(input("Qual opção deseja? "))
+
+main()
